@@ -1,1 +1,3 @@
-# Web-2-Website
+Team: C'ing#'ER
+Members: Chandler, Nick, Sikandar, Chris
+
