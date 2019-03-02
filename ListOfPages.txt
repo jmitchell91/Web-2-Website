@@ -1,0 +1,22 @@
+-Home Page
+-Admin Login
+-Forms Page (Has a list of links to specific form pages) 
+Ex.
+    Estate Forms
+    Trust Forms
+    Conservatorship Forms
+    Guardianship Forms
+    Foreclosure Forms
+    Miscellaneous Forms
+
+-Specific forms pages (List of all forms that fall under the categories above)
+-Commisioner's Fees page (Has a list of links to different fee pages)
+Ex. 
+    Adopted Statewide Fee Schedule
+    Estate Fees
+    Trust Fees
+    Conservatorship Fees
+    Guardianship Fees
+    Foreclosure Fees
+
+-
