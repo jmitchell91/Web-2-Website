@@ -1,5 +1,5 @@
 Color Hex : 19098B  (Blue)
-		  :	BDB17F	(Beige)
+	  : BDB17F  (Beige)
 
 
 -Home Page
