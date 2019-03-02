@@ -1,5 +1,10 @@
+Color Hex : 19098B  (Blue)
+		  :	BDB17F	(Beige)
+
+
 -Home Page
 -Admin Login
+
 -Forms Page (Has a list of links to specific form pages) 
 Ex.
     Estate Forms
@@ -8,8 +13,9 @@ Ex.
     Guardianship Forms
     Foreclosure Forms
     Miscellaneous Forms
-
 -Specific forms pages (List of all forms that fall under the categories above)
+
+
 -Commisioner's Fees page (Has a list of links to different fee pages)
 Ex. 
     Adopted Statewide Fee Schedule
@@ -18,5 +24,102 @@ Ex.
     Conservatorship Fees
     Guardianship Fees
     Foreclosure Fees
+-Specific fees pages (List of all fees that fall under the categories above)
 
--
+
+-Fiduciary Compensation page (Has a list of links to different compensation pages)
+Ex.
+    Estate Fiduciary Compensation
+    Trust Fiduciary Compensation
+    Conservatorship Fiduciary Compensation
+    Guardianship of Minors Fiduciary Compensation
+    Guardian for Incapacitated Adult Fiduciary Compensation
+    Foreclosure Fiduciary Compensation
+-Specific compensation pages (List of all fees that fall under the catagories above)
+
+
+-Resources Page (Has a list of links to different resources)
+Ex.
+    Copy Policy
+    Estates
+    Trusts
+    Conservatorships
+    Guardianships
+    Foreclosures
+    Tip Sheet
+-Specific resources pages (List of all resources that fall under the catagories above)
+
+
+-Estates Page (Has a list of links to different estates related pages)
+Ex.
+    Procedure
+    Affidavit of Notice
+    Inventory
+    Account
+    Insolvent Estates
+    Real Estate
+    Taxes
+    Statement in Lieu of Account
+    Final Account
+    Filing Forms (Link to estate form)
+-Specific information pages (List of all resources that fall under the catagories above)
+
+
+-Trust Page (Has a list of links to different trust related pages)
+Ex.
+    Procedure
+    Inventory
+    Account
+    Taxes
+    Final Account
+    Trust Termination Policy
+    Filing Forms (Link to trust forms)
+-Specific information pages (List of all resources that fall under the catagories above)
+
+
+-Conservatorship Page (Has a list of links to different conservatorship related pages)
+Ex.
+    Procedure
+    Inventory
+    Account
+    Real Estate
+    Taxes
+    Final Account
+    Filing Forms (Link to conservatorship forms)
+-Specific information pages (List of all resources that fall under the catagories above)
+
+
+-Guardianship Page (Has a list of links to different guardianship related pages)
+Ex.
+    Procedure
+    Parental Responsibilities
+    Inventory
+    Account
+    Real Estate
+    Taxes
+    Final Account
+    Filing Forms (Link to guardianship forms)
+-Specific information pages (List of all resources that fall under the catagories above)    
+
+
+-Foreclosures Page (Has a list of links to different foreclosures related pages)
+Ex.
+    Procedure
+    Account
+    Affidavits Related to the Note
+    Filing Forms (Link to foreclosures forms)
+-Specific information pages (List of all resources that fall under the catagories above)    
+
+
+
+******************SIDE BAR CONTENT**********************
+-Help Desk
+    Bank Accounts
+    Claims
+    Hearings
+    Tips for Beneficiaries
+    Tips for Fiduciaries
+    Tips for Filing Your Account
+
+-Contact Information
+
