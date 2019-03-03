@@ -1,0 +1,23 @@
+h1{
+    font-size: 35px;
+    font-family: sans-serif;
+}
+p{
+    text-align: center;
+}
+.navbar{
+    width: 100%;
+    background-color: beige;
+}
+.navbar-brand{
+    width: 100%;
+    background-color: darkblue;
+}
+.navbar-item{
+    width: auto;
+    margin: auto;
+    color: sandybrown;
+}
+body{
+    background-color: beige;
+}
