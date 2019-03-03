@@ -4,6 +4,8 @@ Color Hex : 19098B  (Blue)
 
 -Home Page
 -Admin Login
+	- Admin Home Page
+	- Admin Register Users Account
 
 -Forms Page (Has a list of links to specific form pages) 
 Ex.
