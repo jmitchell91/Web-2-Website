@@ -30,7 +30,7 @@
         </nav>
         <div class="navbar" style="margin-left: 15%">
             <a>
-                <img src="seal.jfif" alt="" width="225" height="150">
+                <img src="seal.png" alt="" width="225" height="150">
             </a>
             <h1>
                 <br/>&nbsp;&nbsp;&nbsp;&nbsp;Commissioner of Accounts for the city of Radford
