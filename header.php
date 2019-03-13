@@ -56,5 +56,6 @@
                 </a>
             </div>
         </nav>
+		<?php include "sidebar.php"; ?>
     </BODY>
 </HTML>

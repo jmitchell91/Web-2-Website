@@ -1,0 +1,30 @@
+.sidenav {
+	width: auto;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	top: 10px;
+	right: 5%;
+	background: darkblue;
+	overflow-x: hidden;
+	padding: 8px 0;
+	float: right;
+	color: beige;
+}
+
+.sidenav a {
+	padding: 10px 8px 6px 0px;
+	text-decoration: none;
+	color: sandybrown;
+	display: block;
+}
+
+.sidenav a:hover {
+	color: blue;
+}
+
+li {
+	list-style-type: circle;
+	margin-left: 20px;
+}
+

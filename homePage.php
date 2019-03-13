@@ -8,7 +8,7 @@
             Home Page
         </TITLE>
     </HEAD>
-    <link rel="stylesheet" href="adminLogin.css">
+    <!--<link rel="stylesheet" href="adminLogin.css">-->
     <script>
 
     </script>
@@ -17,7 +17,7 @@
             Home Page
         </H1>
         <P>
-            This Page is the normal page for users who aren't logged in
-        </P>
+			Holds homepage content
+		</P>
     </BODY>
 </HTML>
