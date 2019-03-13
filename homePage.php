@@ -12,7 +12,6 @@
     <script>
 
     </script>
-	<?php include ("sidebar.php");?>
     <BODY>
         <H1>
             Home Page
