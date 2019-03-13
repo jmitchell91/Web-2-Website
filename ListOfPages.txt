@@ -1,5 +1,5 @@
 Color Hex : 19098B  (Blue)
-	  : BDB17F  (Beige)
+	  : FFFAE3  (Beige)
 
 
 -Home Page
@@ -124,4 +124,9 @@ Ex.
     Tips for Filing Your Account
 
 -Contact Information
+
+
+*******************BOTTOM BAR CONTENT**********************
+-Terms Of Use (AKA "Cover Your Ass" Statement)
+-Privacy Statement
 

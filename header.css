@@ -7,11 +7,11 @@ p{
 }
 .navbar{
     width: 100%;
-    background-color: beige;
+    background-color: #FFFAE3;
 }
 .navbar-brand{
     width: 100%;
-    background-color: darkblue;
+    background-color: #19098B;
 }
 .navbar-item{
     width: auto;
@@ -19,5 +19,5 @@ p{
     color: sandybrown;
 }
 body{
-    background-color: beige;
+    background-color: #FFFAE3;
 }
