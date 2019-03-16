@@ -5,7 +5,8 @@ Color Hex : 19098B  (Blue)
 -Home Page
 -Admin Login
 	- Admin Home Page
-	- Admin Register Users Account
+	- Admin Document Uploader (description and reference path to file)
+	- Admin FAQ Uploader (Create questions and their answers from the database)
 
 -Forms Page (Has a list of links to specific form pages) 
 Ex.
