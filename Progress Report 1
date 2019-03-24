@@ -1,1 +1,22 @@
+C'ing #'ER
 
+Progress-
+Successfully created git hub repo for team to use.
+Can connect and run to our group rucs account.
+Can connect to phpadmin on radford
+Created a group database on Amazon Web Server for testing
+Created first table to be used
+Created intial pages
+Created header and side bar constants
+
+
+Problems-
+phpmyadmin only works when running on the rucs account, which makes repo updates and debugging difficult
+Client needs to provide additional information for pages
+No clear solution to admin interactivity yet
+
+Contributions-
+Chandler Mitchell: Created documentation files and overview list of requirements. Created intial pages that connect to main page and each other
+Sikandar Hawa: Created basic admin login. Created database connection files. Created header design for pages
+Chris Rand: Created sidebar for pages. Updated the header file to include the sidebar
+Nick Anderson: Updated logo image for header. Updated file formatting and page messages
