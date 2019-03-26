@@ -1,6 +1,8 @@
-h1{
-    font-size: 35px;
+h1.header{
+    font-size: 45px;
     font-family: sans-serif;
+	text-align: center;
+	padding-top: 0px;
 }
 p{
     text-align: center;
@@ -17,7 +19,4 @@ p{
     width: auto;
     margin: auto;
     color: sandybrown;
-}
-body{
-    background-color: #FFFAE3;
 }

@@ -20,10 +20,10 @@
 </nav>
 <div class="navbar" style="margin-left: 15%">
     <a>
-        <img src="seal.png" alt="" width="225" height="150">
+        <img src="logo.png" alt="" width="225" height="150">
     </a>
-    <h1>
-        <br/>&nbsp;&nbsp;&nbsp;&nbsp;Commissioner of Accounts for the city of Radford
+    <h1 class="header">
+        <br/>&nbsp;&nbsp;&nbsp;&nbsp;Commissioner of Accounts for the City of Radford
     </h1>
 </div>
 <nav class="navbar2" role="navigation" aria-label="main navigation">
