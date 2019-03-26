@@ -1,40 +1,40 @@
 <?PHP
+error_reporting(E_ALL);
 /*
   * login: string, string -> session
   * given a valid string $username and string $password
   * will login you in to admin homepage
   */
+include ('dbConnection.php');
 
-// for Database connection
-    $dbhost = 'localhost';
-    $dbuser = 'proj1';
-    $dbpass = '325p1TeamDB';
-    $dbname = 'proj1';
+// variable declaration
+$username = "";
+$email = "";
+$errors = array();
 
-
-$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+// escape string
+function e($val)
+{
+    global $connection;
+    return mysqli_real_escape_string($connection, trim($val));
 }
 
-$db->setFetchMode(DB_FETCHMODE_ASSOC);
+function display_error()
+{
+    global $errors;
 
-$sql = 'SELECT * FROM admin_account';
-
-$demoResult = $db->query($sql);
-
-while ($demoRow = $demoResult->fetchRow()) {
-    echo $demoRow['first'] . ' ' . $demoRow['last'] . '<br>';
+    if (count($errors) > 0) {
+        echo '<div class="error">';
+        foreach ($errors as $error) {
+            echo $error . '<br>';
+        }
+        echo '</div>';
+    }
 }
-
-
-
 // LOGIN USER
 function login()
 {
-    global $db, $username, $errors, $userID;
+    global $connection, $username, $errors, $userID;
 
 // grab form values from login form
     $username = e($_POST['username']);
@@ -50,10 +50,10 @@ function login()
 
 // attempt login if no errors on form
     if (count($errors) == 0) {
-        $password = md5($password);
+        //$password = md5($password);
 
-        $query = "SELECT * FROM innodb.users WHERE username='$username' AND password='$password' LIMIT 1";
-        $results = mysqli_query($db, $query);
+        $query = "SELECT * FROM Web2DB.Users WHERE Username='$username' AND Password='$password' LIMIT 1";
+        $results = mysqli_query($connection, $query);
 
         if (mysqli_num_rows($results) == 1) { // user found
             $logged_in_user = mysqli_fetch_assoc($results);
@@ -62,11 +62,14 @@ function login()
                 $_SESSION['email'] = $logged_in_user['email'];
                 $_SESSION['userName'] = $logged_in_user['username'];
                 $_SESSION['success'] = "You are now logged in";
-                header('location: loggedIn.php');
+                header('location: adminHomePage.php');
         } else {
-            array_push($errors, "Wrong username/password combination");
+            display_error ( array_push($errors, "Wrong username/password combination"))
+            ;
         }
     }
+    else
+        display_error ( $errors);
 }
 /*
  *  when login button is clicked
@@ -74,9 +77,38 @@ function login()
 if (isset($_POST['login-btn'])) {
     login();
 }
-function e($val)
-{
-    global $db;
-    return mysqli_real_escape_string($db, trim($val));
+
+/*
+ *  test: string[], optional string-or-false -> string
+ *  given a optional non-empty string (firstItemIsAHeader) and a string array will
+ *  return firstItemIsAHeader as th and each element of array as td of a HTML table rows
+ *  given false or no second input as second argument wont return the th tag
+ */
+
+function asRow($tds, $firstItemIsAHeader = false){
+    $tdsSoFar = "";
+    foreach($tds AS $td){
+        $tdsSoFar .= "    <td>\n        $td\n    </td>\n";
+    }
+    if ($firstItemIsAHeader === false) {
+        return "<tr>\n$tdsSoFar</tr>\n";
+    } else {
+        return "<tr>\n    <th>\n        $firstItemIsAHeader\n    </th>\n</tr>\n<tr>\n$tdsSoFar</tr>\n";
+    }
+}
+
+
+/*
+ *  makeTable string, string[string[]] -> table
+ *  given an non-empty string $tableName and a non-empty string array $rowsArray of non-empty string arrays
+ *  will return string for HTML table with table id = $tableName and each array inside the $rowsArray as a row
+ *  in the table
+ */
+function makeTable($tableName, $rowsArray){
+    $tableHTML = "";
+    foreach($rowsArray AS $row){
+        $tableHTML .= asRow($row, false);
+    }
+    return "<table id='$tableName'>\n$tableHTML\n</table>\n";
 }
 ?>
