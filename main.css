@@ -6,3 +6,11 @@ body{
 {
 	min-height: 65%;
 }
+
+#pageContent{
+  text-align: center
+}
+
+#pageContent ul{
+  display: inline-table;
+}

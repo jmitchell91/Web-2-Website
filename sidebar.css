@@ -1,13 +1,12 @@
 #sidebar {
 	width: auto;
-	height: 50%;
-	position: relative;
+	position: fixed;
 	z-index: 1;
-	top: 10px;
+	top: auto;
 	right: 5%;
-	background: darkblue;
+	background: #19098B;
 	overflow-x: hidden;
-	padding: 8px 0;
+	padding: 20px;
 	float: right;
 	color: beige;
 }
