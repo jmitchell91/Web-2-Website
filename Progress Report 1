@@ -9,6 +9,7 @@ Created first table to be used
 Created intial pages
 Created header and side bar constants
 Created footer constant
+Revised pages to be xhtml compliant
 
 
 Problems-
@@ -19,5 +20,5 @@ No clear solution to admin interactivity yet
 Contributions-
 Chandler Mitchell: Created documentation files and overview list of requirements. Created intial pages that connect to main page and each other
 Sikandar Hawa: Created basic admin login. Created database connection files. Created header design for pages
-Chris Rand: Created sidebar for pages. Updated the header file to include the sidebar. Created footer for pages.
+Chris Rand: Created sidebar for pages. Updated pages to include sidebar. Revised pages for xhtml compliance. Created footer TBD. Created stylesheet importer.
 Nick Anderson: Updated logo image for header. Updated file formatting and page messages

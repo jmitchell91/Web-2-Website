@@ -1,19 +1,24 @@
+<<<<<<< HEAD
 <?php
     include ( 'header.php');
     include ( 'functions.php');
 ?>
+=======
+>>>>>>> 7cb6d3ce6011e09d47cd3969e45296f7ba822375
 <DOC! HTML>
 <HTML>
     <HEAD>
         <TITLE>
             ADMIN Register Page
         </TITLE>
+        <?php require_once('stylesheetImport.php'); ?>
     </HEAD>
     <link rel="stylesheet" href="adminLogin.css">
     <script>
 
     </script>
     <BODY>
+    <?php require_once('header.php'); require_once('sidebar.php'); ?>
         <H1>
             ADMIN Register Page
         </H1>

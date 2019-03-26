@@ -7,12 +7,14 @@
         <TITLE>
             ADMIN Login Page
         </TITLE>
+        <?php require_once('stylesheetImport.php'); ?>
     </HEAD>
     <link rel="stylesheet" href="adminLogin.css">
     <script>
 
     </script>
     <BODY>
+    <?php require_once('header.php'); require_once('sidebar.php'); ?>
         <H1>
             ADMIN Login
         </H1>
