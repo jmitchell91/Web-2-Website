@@ -1,4 +1,4 @@
-<div class="sidenav">
+<div id="sidebar">
 	Help Desk:
 	<ul>
 		<li><a href="">Bank Accounts</a></li>

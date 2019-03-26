@@ -1,4 +1,4 @@
-.sidenav {
+#sidebar {
 	width: auto;
 	height: 100%;
 	position: relative;
@@ -12,19 +12,18 @@
 	color: beige;
 }
 
-.sidenav a {
+#sidebar a {
 	padding: 10px 8px 6px 0px;
 	text-decoration: none;
 	color: sandybrown;
 	display: block;
 }
 
-.sidenav a:hover {
+#sidebar a:hover {
 	color: blue;
 }
 
-li {
+#sidebar li {
 	list-style-type: circle;
 	margin-left: 20px;
 }
-
