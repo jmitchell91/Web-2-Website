@@ -20,5 +20,5 @@ No clear solution to admin interactivity yet
 Contributions-
 Chandler Mitchell: Created documentation files and overview list of requirements. Created intial pages that connect to main page and each other
 Sikandar Hawa: Created basic admin login. Created database connection files. Created header design for pages
-Chris Rand: Created sidebar for pages. Updated pages to include sidebar. Revised pages for xhtml compliance. Created footer TBD. Created stylesheet importer.
+Chris Rand: Created sidebar for pages. Updated pages to include sidebar. Revised pages for xhtml compliance. Created stylesheet importer. Modified page content layout.
 Nick Anderson: Updated logo image for header. Updated file formatting and page messages. Created footer and added it to pages. Modified html layout of all pages.
