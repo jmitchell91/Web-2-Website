@@ -18,7 +18,7 @@
             </a>
     </div>
 </nav>
-<div class="navbar" style="margin-left: 15%">
+<div class="navbar" style="margin-left: 0%">
     <a>
         <img src="logo.png" alt="" width="225" height="150">
     </a>
