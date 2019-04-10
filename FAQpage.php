@@ -25,11 +25,11 @@
 					$question = $tableRow["Question"];
 					$answer= $tableRow["Answer"];
 					
-					echo "<h3><u>Question:</u> $question </br><u>Answer:</u> $answer </h3><br/>";
+					echo "<h3><u>Question:</u> $question \n<br/><u>Answer:</u> $answer </h3>\n<br/>\n";
 				}
 			?>
   		</div>
-		</div>
+	</div>
 		<?php require_once('footer.php'); ?>
     </BODY>
 </HTML>

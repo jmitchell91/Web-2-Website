@@ -10,6 +10,7 @@ body{
 #pageContent{
   text-align: center;
   padding-bottom: 100%;
+  padding-right: 25%;
 }
 
 #pageContent ul{
