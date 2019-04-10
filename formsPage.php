@@ -12,12 +12,12 @@
 			<?php require_once('sidebar.php'); ?>
 			<div id="pageContent">
 				<ul>
-					<li><a href="">Estate Forms</a></li>
-					<li><a href="">Trust Forms</a></li>
-					<li><a href="">Conservatorship Forms</a></li>
-					<li><a href="">Guardianship Forms</a></li>
-					<li><a href="">Foreclosure Forms</a></li>
-					<li><a href="">Miscellaneous Forms</a></li>
+					<li><a href="estateForms.php">Estate Forms</a></li>
+					<li><a href="trustForms.php">Trust Forms</a></li>
+					<li><a href="conservatorshipForms.php">Conservatorship Forms</a></li>
+					<li><a href="guardianshipForms.php">Guardianship Forms</a></li>
+					<li><a href="foreclosureForms.php">Foreclosure Forms</a></li>
+					<li><a href="miscellaneousForms.php">Miscellaneous Forms</a></li>
 				</ul>
 			</div>
 		</div>

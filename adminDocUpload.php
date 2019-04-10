@@ -23,6 +23,7 @@
 			<br/>
 			<br/>
 			<input type="button" class="button" name="AdminHomeBtn" value="Return to Home" onclick="location.href = 'adminHomePage.php'" />
+			<input type="button" class="button" name="DocUpdateBtn" value="Update Document" onclick="location.href = 'adminDocUpdate.php'" />
 		<div id="adminForms">
 			
 			Page with document uploader
