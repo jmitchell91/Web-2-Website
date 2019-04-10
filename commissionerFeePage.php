@@ -12,12 +12,12 @@
 		<?php require_once('sidebar.php'); ?>
   		<div id="pageContent">
   			<ul>
-  				<li><a href="">Adopted Statewide Fee Schedule</a></li>
-  				<li><a href="">Estate Fees</a></li>
-  				<li><a href="">Trust Fees</a></li>
-  				<li><a href="">Conservatorship Fees</a></li>
-  				<li><a href="">Guardianship Fees</a></li>
-  				<li><a href="">Foreclosure Fees</a></li>
+  				<li><a href="adoptedStatewideFeeSechedule.php">Adopted Statewide Fee Schedule</a></li>
+  				<li><a href="estateFees.php">Estate Fees</a></li>
+  				<li><a href="trustFees.php">Trust Fees</a></li>
+  				<li><a href="conservatorshipFees.php">Conservatorship Fees</a></li>
+  				<li><a href="guardianshipsFees.php">Guardianship Fees</a></li>
+  				<li><a href="foreclosuresFees.php">Foreclosure Fees</a></li>
   			</ul>
   		</div>
 		</div>

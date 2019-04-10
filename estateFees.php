@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
     <TITLE>
-        Estate Fee
+        Estate Fees
     </TITLE>
     <?php require_once('stylesheetImport.php'); ?>
 </HEAD>
