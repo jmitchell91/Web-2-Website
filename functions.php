@@ -31,7 +31,7 @@ function display_error()
         echo '</div>';
     }
 }
-// LOGIN USER
+/* LOGIN USER
 function login()
 {
     global $connection, $username, $errors, $userID;
@@ -57,7 +57,7 @@ function login()
 
         if (mysqli_num_rows($results) == 1) { // user found
             $logged_in_user = mysqli_fetch_assoc($results);
-
+				session_start();
                 $_SESSION['user'] = $logged_in_user;
                 $_SESSION['email'] = $logged_in_user['email'];
                 $_SESSION['userName'] = $logged_in_user['username'];
@@ -73,7 +73,7 @@ function login()
 }
 /*
  *  when login button is clicked
- */
+ *
 if (isset($_POST['login-btn'])) {
     login();
 }
@@ -111,4 +111,43 @@ function makeTable($tableName, $rowsArray){
     }
     return "<table id='$tableName'>\n$tableHTML\n</table>\n";
 }
+
+
+/*
+ *  when logout button is clicked
+ */
+if (isset($_POST['logout-btn'])) {
+    logout();
+}
+
+//Logout user
+function logout()
+{
+	session_start();
+	session_destroy();
+	header('location: adminLoginPage.php');
+}
+
+
+/*
+ *  when submit button is clicked
+ */
+if (isset($_POST['FAQ-submit']))
+{
+	if (isset($_POST['question-text']) && isset($_POST['answer-text']))
+	{
+		$question = $connection->real_escape_string($_POST['question-text']);
+		$answer = $connection->real_escape_string($_POST['answer-text']);
+		$sql = "INSERT INTO Web2DB.FAQ (Question,Answer) VALUES ('$question', '$answer')";
+
+		if ($connection->query($sql) === TRUE) {
+			echo "New record created successfully";
+		} 
+		else 
+		{
+			echo "Error: " . $sql . "<br>" . $connection->error;
+		}
+	}
+}
+
 ?>

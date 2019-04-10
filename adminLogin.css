@@ -1,8 +1,8 @@
-h1 {
+h1.admin {
     text-align: center;
     font-family: "Helvetica Neue";
-    font-size:60px;
-    color: blue;
+    font-size:40px;
+    color: black;
 }
 #adminLoginForm{
     margin: auto;
@@ -13,4 +13,10 @@ h1 {
 #loginTab{
     text-align: center;
     font-size: 25px;
+}
+#adminForms{
+    margin: auto;
+    align-content: center;
+    width: 30%;
+    padding-bottom: 100%;
 }

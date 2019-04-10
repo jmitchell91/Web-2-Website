@@ -1,6 +1,6 @@
 #sidebar {
 	width: auto;
-	position: fixed;
+	position: relative;
 	z-index: 1;
 	top: auto;
 	right: 5%;

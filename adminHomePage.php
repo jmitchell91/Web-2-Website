@@ -1,3 +1,8 @@
+<?PHP
+    include ("functions.php");
+	require_once('dbConnection.php');
+	include('Session.php');
+?>
 <DOC! HTML>
 <HTML>
     <HEAD>
@@ -7,16 +12,42 @@
          <?php require_once('stylesheetImport.php'); ?>
     </HEAD>
     <BODY>
-      <?php require_once('header.php');?>
 	  <div class="content">
-		<?php require_once('sidebar.php'); ?>
-		  <H1>
+		  <H1 class="admin">
             ADMIN Home Page
-        </H1>
-        <P>
-            This Page will load after successful login.
-        </P>
+		
+			<FORM ID="adminLogoutForm" METHOD="post" ACTION="adminHomePage.php">
+				<INPUT TYPE="submit" CLASS="button" NAME="logout-btn" VALUE="Logout" style="float:right; background-color:red; color: white"/>
+			</FORM>
+			</H1>
+			<br/>
+			<br/>
+		<div id="adminForms">
+			<FORM ID="adminFAQForm" method="post" ACTION="adminHomePage.php">
+				<h4>
+				Question: <INPUT TYPE="text" NAME="question-text" style="float: right" required/>
+				<br/>
+				Answer: <INPUT TYPE="text" NAME="answer-text" style="float: right" required/>
+				</h4>
+				<br>
+				<INPUT TYPE="submit" CLASS="button" NAME="FAQ-submit" Value="Submit"/>
+			</FORM>
+			<br/>
+			<br/>
+			<h3>Current FAQs:</h3>
+			</br>
+			<?php
+				$query = "SELECT * FROM Web2DB.FAQ;";
+				$result = mysqli_query($connection,$query);
+				while($tableRow = mysqli_fetch_assoc($result))
+				{
+					$question = $tableRow["Question"];
+					$answer= $tableRow["Answer"];
+					
+					echo "<u>Question:</u> $question <u>Answer:</u> $answer <br/>";
+				}
+			?>
+		</div>
 	  </div>
-	  <?php require_once('footer.php'); ?>
     </BODY>
 </HTML>

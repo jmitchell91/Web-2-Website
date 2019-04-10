@@ -7,6 +7,7 @@
 		<li><a href="">Tips for Beneficiaries</a></li>
 		<li><a href="">Tips for Fiduciaries</a></li>
 		<li><a href="">Tips for Filing Your Account</a></li>
+		<li><a href="">FAQ</a></li>
 	</ul>
 	<br />
 	Contact Information:
