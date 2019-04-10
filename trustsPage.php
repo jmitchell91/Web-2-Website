@@ -12,13 +12,13 @@
 			<?php require_once('sidebar.php'); ?>
 			<div id="pageContent">
 				<ul>
-					<li><a href="">Procedure</a></li>
-					<li><a href="">Inventory</a></li>
-					<li><a href="">Account</a></li>
-					<li><a href="">Taxes</a></li>
-					<li><a href="">Final Account</a></li>
-					<li><a href="">Trust Termination Policy</a></li>
-					<li><a href="">Filing Forms</a></li>
+					<li><a href="trustsProcedures.php">Procedure</a></li>
+					<li><a href="trustsInventory.php">Inventory</a></li>
+					<li><a href="trustsAccount.php">Account</a></li>
+					<li><a href="trustsTaxes.php">Taxes</a></li>
+					<li><a href="trustsFinalAccounting.php">Final Account</a></li>
+					<li><a href="trustsTermPolicy.php">Trust Termination Policy</a></li>
+					<li><a href="trustForms.php">Filing Forms</a></li>
 				</ul>
 			</div>
 		</div>

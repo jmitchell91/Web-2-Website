@@ -12,10 +12,10 @@
 			<?php require_once('sidebar.php'); ?>
 			<div id="pageContent">
 				<ul>
-					<li><a href="">Procedure</a></li>
-					<li><a href="">Account</a></li>
-					<li><a href="">Affidavits Related to the Note</a></li>
-					<li><a href="">Filing Forms</a></li>
+					<li><a href="foreclosuresProcedure.php">Procedure</a></li>
+					<li><a href="foreclosuresAccount.php">Account</a></li>
+					<li><a href="foreclosuresAffidavitRelated.php">Affidavits Related to the Note</a></li>
+					<li><a href="foreclosureForms.php">Filing Forms</a></li>
 				</ul>
 			</div>
 		</div>
