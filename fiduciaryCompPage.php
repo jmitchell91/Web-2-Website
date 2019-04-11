@@ -12,12 +12,12 @@
 			<?php require_once('sidebar.php'); ?>
 			<div id="pageContent">
 				<ul>
-					<li><a href="">Estate Fiduciary Compensation</a></li>
-					<li><a href="">Trust Fiduciary Compensation</a></li>
-					<li><a href="">Conservatorship Fiduciary Compensation</a></li>
-					<li><a href="">Guardianship of Minors Fiduciary Compensation</a></li>
-					<li><a href="">Guardian for Incapacitated Adult Fiduciary Compensation</a></li>
-					<li><a href="">Foreclosure Fiduciary Compensation</a></li>
+					<li><a href="estateFidComp.php">Estate Fiduciary Compensation</a></li>
+					<li><a href="trustsFidComp.php">Trust Fiduciary Compensation</a></li>
+					<li><a href="conservatorshipFidComp.php">Conservatorship Fiduciary Compensation</a></li>
+					<li><a href="GuardianshipMinorsFidComp.php">Guardianship of Minors Fiduciary Compensation</a></li>
+					<li><a href="guadianIncapaAdultFidComp.php">Guardian for Incapacitated Adult Fiduciary Compensation</a></li>
+					<li><a href="foreclosureFidComp.php">Foreclosure Fiduciary Compensation</a></li>
 				</ul>
 			</div>
 		</div>
