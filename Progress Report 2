@@ -1,12 +1,12 @@
 C'ing #'ER Progress Report 2
 
-Progress:
+Progress: File uploader and stored procedures for easier query use have begun to be implemented
 
-Problems:
+Problems: File uploader is running into some issues
 
 Contributions:
 All members: Frequent chat discussions and occasional meetings.
-Chandler Mitchell:
+Chandler Mitchell: Client input and page content filling (non database reliant content)
 Sikandar Hawa:
 Chris Rand: Created pages linked to by the sidebar. Revised sidebar structure. 
 Nick Anderson:
