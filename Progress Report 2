@@ -7,6 +7,6 @@ Problems: File uploader is running into some issues
 Contributions:
 All members: Frequent chat discussions and occasional meetings.
 Chandler Mitchell: Client input and page content filling (non database reliant content)
-Sikandar Hawa:
-Chris Rand: Created pages linked to by the sidebar. Revised sidebar structure. 
+Sikandar Hawa: File uploader for documents across site (in progress), added fee and various pages for header, changes to login pages.
+Chris Rand: Created pages linked to by the sidebar. Revised sidebar structure. Function to generate page selectors for file uploader (in progress).
 Nick Anderson:
