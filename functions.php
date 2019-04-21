@@ -57,7 +57,7 @@ function login()
 
         if (mysqli_num_rows($results) == 1) { // user found
             $logged_in_user = mysqli_fetch_assoc($results);
-				session_start();
+                session_start();
                 $_SESSION['user'] = $logged_in_user;
                 $_SESSION['email'] = $logged_in_user['email'];
                 $_SESSION['userName'] = $logged_in_user['username'];
@@ -112,6 +112,21 @@ function makeTable($tableName, $rowsArray){
     return "<table id='$tableName'>\n$tableHTML\n</table>\n";
 }
 
+/* pagesDropdown : no parameters
+ * Returns a string for HTML dropdown of all the pages in the database for file uploading page
+*/
+function pagesDropdown(){
+    $selectPages = 'SELECT Page_Name from Pages';
+    $allRows = mysqli_query($connection, $selectPages);
+    $dropdownString = "<select name='$name'>\n"; //string containing html string result
+    $dropdownString = $dropdownString . "    <option value=''>Select one</option>\n";
+    while ($oneRow = mysqli_fetch_assoc($allRows)){
+        $dropdownString = $dropdownString . "    <option value='" . $oneRow['Page_Name'] . "'>" .
+            ucfirst($string) . "</option>\n";
+    }
+    $dropdownString = $dropdownString . "</select>";
+    return $dropdownString;
+}
 
 /*
  *  when logout button is clicked
@@ -123,9 +138,9 @@ if (isset($_POST['logout-btn'])) {
 //Logout user
 function logout()
 {
-	session_start();
-	session_destroy();
-	header('location: adminLoginPage.php');
+    session_start();
+    session_destroy();
+    header('location: adminLoginPage.php');
 }
 
 
@@ -134,20 +149,20 @@ function logout()
  */
 if (isset($_POST['FAQ-submit']))
 {
-	if (isset($_POST['question-text']) && isset($_POST['answer-text']))
-	{
-		$question = $connection->real_escape_string($_POST['question-text']);
-		$answer = $connection->real_escape_string($_POST['answer-text']);
-		$sql = "INSERT INTO Web2DB.FAQ (Question,Answer) VALUES ('$question', '$answer')";
+    if (isset($_POST['question-text']) && isset($_POST['answer-text']))
+    {
+        $question = $connection->real_escape_string($_POST['question-text']);
+        $answer = $connection->real_escape_string($_POST['answer-text']);
+        $sql = "INSERT INTO Web2DB.FAQ (Question,Answer) VALUES ('$question', '$answer')";
 
-		if ($connection->query($sql) === TRUE) {
-			echo "New record created successfully";
-		} 
-		else 
-		{
-			echo "Error: " . $sql . "<br>" . $connection->error;
-		}
-	}
+        if ($connection->query($sql) === TRUE) {
+            echo "New record created successfully";
+        }
+        else
+        {
+            echo "Error: " . $sql . "<br>" . $connection->error;
+        }
+    }
 }
 
 ?>
