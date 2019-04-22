@@ -10,9 +10,14 @@
 	text-align: center;
 	padding-top: 1%;
 	padding-bottom: 1%;
+	
 }
 
-.nostyle
+#footer a
 {
-	list-style-type:none;
+	color: sandybrown;
+}
+
+#footer a:hover {
+	color: blue;
 }

@@ -11,6 +11,10 @@
 		<div class="content">
 			<?php require_once('sidebar.php'); ?>
 			<div id="pageContent">
+			</br>
+				<p class="bulk">
+				In the sections below you will find fillable forms provided by the Office of the Executive Secretary of the Supreme Court of Virginia and by the Office of the Radford City Circuit Court Commissioner of Accounts.
+				</p>
 				<ul>
 					<li><a href="estateForms.php">Estate Forms</a></li>
 					<li><a href="trustForms.php">Trust Forms</a></li>

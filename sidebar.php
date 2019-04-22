@@ -10,6 +10,12 @@
         <li><a href="FAQpage.php">FAQ</a></li>
     </ul>
     <br />
-    Contact Information:
+    Contact Information: 
+	</br>
+	Missie Mitchell, Senior COA Auditor
+	</br>
+	(540) 639-4056
+	</br>
+	missie@gcdlaw.net
 
 </div>

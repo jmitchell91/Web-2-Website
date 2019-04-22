@@ -11,7 +11,18 @@
         <div class="content">
             <?php require_once('sidebar.php'); ?>
             <div id="pageContent">
-                Estate Forms Go Here
+                <p class="bulk">
+				** PLEASE READ BEFORE FILLING OUT ON-LINE FORMS **
+				</br>
+				</br>
+				Firefox is the recommended browser to be able to save a filled out copy of your filing for your records.
+				</br>
+				</br>
+				Adobe Reader is required to be able to save a filled out copy of your filing for your records. A free download is available at www.adobe.com.
+				</br>
+				</br>
+				All forms must be printed out and endorsed with original signature(s).
+				</p>
             </div>
         </div>
         <?php require_once('footer.php'); ?>

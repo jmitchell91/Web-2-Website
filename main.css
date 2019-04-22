@@ -10,9 +10,17 @@ body{
 #pageContent{
   text-align: center;
   padding-bottom: 100%;
-  padding-right: 25%;
+  padding-right: 28%;
+  padding-left: 5%;
 }
 
 #pageContent ul{
   display: inline-table;
+  font-size: 20px
+}
+
+#pageContent p.bulk{
+ 
+  font-size: 20px
+  
 }
