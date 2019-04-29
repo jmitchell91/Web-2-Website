@@ -5,7 +5,7 @@ error_reporting(E_ALL);
   * given a valid string $username and string $password
   * will login you in to admin homepage
   */
-include ('dbConnection.php');
+require ('dbConnection.php');
 
 // variable declaration
 $username = "";
@@ -116,13 +116,14 @@ function makeTable($tableName, $rowsArray){
  * Returns a string for HTML dropdown of all the pages in the database for file uploading page
 */
 function pagesDropdown(){
-    $selectPages = 'SELECT Page_Name from Pages';
+	global $connection;
+    $selectPages = 'SELECT Page_Name from Web2DB.Pages';
     $allRows = mysqli_query($connection, $selectPages);
-    $dropdownString = "<select name='$name'>\n"; //string containing html string result
+    $dropdownString = "<select name='Pages'>\n"; //string containing html string result
     $dropdownString = $dropdownString . "    <option value=''>Select one</option>\n";
     while ($oneRow = mysqli_fetch_assoc($allRows)){
         $dropdownString = $dropdownString . "    <option value='" . $oneRow['Page_Name'] . "'>" .
-            ucfirst($string) . "</option>\n";
+            $oneRow['Page_Name'] . "</option>\n";
     }
     $dropdownString = $dropdownString . "</select>";
     return $dropdownString;
