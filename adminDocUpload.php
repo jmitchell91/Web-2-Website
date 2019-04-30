@@ -27,6 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             if (mysqli_affected_rows($connection) === 1) {
                 echo "<script type='text/javascript'>alert('Sucess!') </script>";
+<<<<<<< HEAD
             }
             else
                 echo "<script type='text/javascript'>alert('Error!')</script>";
@@ -35,6 +36,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 }
 else
     echo "<script type='text/javascript'>alert('Please select file!')</script>";
+=======
+            } else {
+                echo "<script type='text/javascript'>alert('Please select file!')</script>";
+            }
+        }
+    }
+}
+>>>>>>> 1f70fa4a3a628aa9bd5251972d9e4b1c774fe3ff
 ?>
 <DOC! HTML>
 <HTML>
@@ -73,7 +82,11 @@ else
                             Select File:
                         </td>
                         <td>
+<<<<<<< HEAD
                             <input id="uploadPDF" type='file' class="button" required="required" name="upload" onchange="PreviewImage();">
+=======
+                            <input id="uploadPDF" type='file' class="button" name="upload" onchange="PreviewImage();">
+>>>>>>> 1f70fa4a3a628aa9bd5251972d9e4b1c774fe3ff
                             <div style="clear:both">
                                 <iframe id="viewer" frameborder="0" scrolling="no" width="600" height="600"></iframe>
                             </div>
@@ -92,7 +105,11 @@ else
                             File Name:
                         </td>
                         <td>
+<<<<<<< HEAD
                             <input type="text" name="fileName" required="required">
+=======
+                            <input type="text" name="fileName">
+>>>>>>> 1f70fa4a3a628aa9bd5251972d9e4b1c774fe3ff
                         </td>
                     </tr>
                     <tr>
@@ -100,7 +117,11 @@ else
                             Short Description:
                         </td>
                         <td>
+<<<<<<< HEAD
                             <input type="text" name="shortDescription" required="required">
+=======
+                            <input type="text" name="shortDescription" >
+>>>>>>> 1f70fa4a3a628aa9bd5251972d9e4b1c774fe3ff
                         </td>
                     </tr>
                     <tr>
