@@ -1,8 +1,57 @@
+<<<<<<< HEAD
 <?php
 include ("functions.php");
 require_once('dbConnection.php');
 include('Session.php');
 
+=======
+<?PHP
+    include ("functions.php");
+	require_once('dbConnection.php');
+	include('Session.php');
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    $file_name = e($_POST["fileName"]);
+    $file_desc = e($_POST["shortDescription"]);
+    // check for uploaded file
+    if (isset($_FILES['upload'])) {
+        // file name, type, size, temporary name
+        $file_path = $_FILES['upload']['name'];
+        $file_tmp_name = $_FILES['upload']['tmp_name'];
+        // target directory
+        $target_dir = "Web Docs/";
+
+        // uploding file
+        if (move_uploaded_file($file_tmp_name, $target_dir . $file_path)) {
+            // connect to database
+            global $connection;
+            // query
+
+            $insertQuery = "INSERT into Web2DB.Documents ( Name, Description, Reference)
+                            VALUES ('$file_name', '  $file_desc  ', '$target_dir $file_path')";
+
+            // run query
+            $runQuery = mysqli_query($connection, $insertQuery);
+
+            if (mysqli_affected_rows($connection) === 1) {
+                echo "<script type='text/javascript'>alert('Sucess!') </script>";
+<<<<<<< HEAD
+            }
+            else
+                echo "<script type='text/javascript'>alert('Error!')</script>";
+        }
+        }
+}
+else
+    echo "<script type='text/javascript'>alert('Please select file!')</script>";
+=======
+            } else {
+                echo "<script type='text/javascript'>alert('Please select file!')</script>";
+            }
+        }
+    }
+}
+>>>>>>> 1f70fa4a3a628aa9bd5251972d9e4b1c774fe3ff
+>>>>>>> 2c018d5e524c39d1535dc8a57a859bd1ffc8b91b
 ?>
 <DOC! HTML>
 <HTML>
@@ -32,8 +81,13 @@ include('Session.php');
 			<br/>
 			<br/>
 			<input type="button" class="button" name="AdminHomeBtn" value="Return to Home" onclick="location.href = 'adminHomePage.php'" />
+<<<<<<< HEAD
 
 
+=======
+			<input type="button" class="button" name="DocUpdateBtn" value="Update Document" onclick="location.href = 'adminDocUpdate.php'" />
+		<div id="adminForms">
+>>>>>>> 2c018d5e524c39d1535dc8a57a859bd1ffc8b91b
             <form id = "fileUploaderForm" action=" " method="post" enctype="multipart/form-data">
                 <table>
                     <tr>
@@ -41,10 +95,21 @@ include('Session.php');
                             Select File:
                         </td>
                         <td>
+<<<<<<< HEAD
                             <input id="uploadPDF" type='file' class="button" required="required" name="upload" onchange="PreviewImage();">
                             <iframe id="viewer" src="" width="400" height="400">
                                 <p>Your browser does not support iframes.</p>
                             </iframe>
+=======
+<<<<<<< HEAD
+                            <input id="uploadPDF" type='file' class="button" required="required" name="upload" onchange="PreviewImage();">
+=======
+                            <input id="uploadPDF" type='file' class="button" name="upload" onchange="PreviewImage();">
+>>>>>>> 1f70fa4a3a628aa9bd5251972d9e4b1c774fe3ff
+                            <div style="clear:both">
+                                <iframe id="viewer" frameborder="0" scrolling="no" width="600" height="600"></iframe>
+                            </div>
+>>>>>>> 2c018d5e524c39d1535dc8a57a859bd1ffc8b91b
                         </td>
                     </tr>
                     <tr>
@@ -60,7 +125,15 @@ include('Session.php');
                             File Name:
                         </td>
                         <td>
+<<<<<<< HEAD
                             <input type="text" name="fileName" required="required">
+=======
+<<<<<<< HEAD
+                            <input type="text" name="fileName" required="required">
+=======
+                            <input type="text" name="fileName">
+>>>>>>> 1f70fa4a3a628aa9bd5251972d9e4b1c774fe3ff
+>>>>>>> 2c018d5e524c39d1535dc8a57a859bd1ffc8b91b
                         </td>
                     </tr>
                     <tr>
@@ -68,16 +141,32 @@ include('Session.php');
                             Short Description:
                         </td>
                         <td>
+<<<<<<< HEAD
                             <input type="text" name="shortDescription" required="required">
+=======
+<<<<<<< HEAD
+                            <input type="text" name="shortDescription" required="required">
+=======
+                            <input type="text" name="shortDescription" >
+>>>>>>> 1f70fa4a3a628aa9bd5251972d9e4b1c774fe3ff
+>>>>>>> 2c018d5e524c39d1535dc8a57a859bd1ffc8b91b
                         </td>
                     </tr>
                     <tr>
                         <td rowspan="2">
+<<<<<<< HEAD
                             <input type="submit" class="button " name="uploadButton" value="Upload File" >
+=======
+                            <input type="submit" class="button " value="Upload File">
+>>>>>>> 2c018d5e524c39d1535dc8a57a859bd1ffc8b91b
                         </td>
                     </tr>
                 </table>
             </form>
+<<<<<<< HEAD
+=======
+		</div>
+>>>>>>> 2c018d5e524c39d1535dc8a57a859bd1ffc8b91b
 	  </div>
     </BODY>
 </HTML>
