@@ -20,3 +20,10 @@ h1.admin {
     width: 30%;
     padding-bottom: 100%;
 }
+#fileUploaderForm{
+    margin: auto;
+    align-content: center;
+    width: 50%;
+    padding: 10px;
+    padding-bottom: 100%;
+}
