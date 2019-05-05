@@ -19,6 +19,29 @@ function e($val)
     return mysqli_real_escape_string($connection, trim($val));
 }
 
+/*
+ *  displayFiles: string -> string
+ *  given a string for the page name, return html based on a query for that page name and retun files that are assigned to that page
+ */
+function displayFiles($pageName)
+{
+	global $connection;
+	$query = "SELECT * FROM Web2DB.Documents d
+				Inner Join Web2DB.Files_to_Path f
+				On d.Document_ID = f.Document_ID
+				Inner Join Web2DB.Pages p
+				On f.Page_ID = p.Page_ID
+				Where Page_Name = '$pageName';";
+	$result = mysqli_query($connection,$query);
+	while($tableRow = mysqli_fetch_assoc($result))
+	{
+		$reference = $tableRow["Reference"];
+		$name= $tableRow["Name"];
+		
+		echo "<h3>File: <a href='". $reference . "' target='_blank'>$name</a><br/>";
+	}
+}
+
 function display_error()
 {
     global $errors;

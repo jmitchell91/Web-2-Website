@@ -26,6 +26,8 @@
 		<div id="adminForms">
 			<input type="button" class="button" name="FAQPage" value="New FAQ" style="align:center" onclick="location.href = 'adminFAQPage.php'" />
 			<input type="button" class="button" name="DocPage" value="Upload Document" style="align:center" onclick="location.href = 'adminDocUpload.php'" />
+			<input type="button" class="button" name="LinkUploadBtn" value="Upload Link" onclick="location.href = 'adminLinkUpload.php'" />
+			<input type="button" class="button" name="DocUpdateBtn" value="Update Document" onclick="location.href = 'adminDocUpdate.php'" />
 		</div>
 	  </div>
     </BODY>

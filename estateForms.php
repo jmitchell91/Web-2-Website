@@ -4,7 +4,9 @@
         <TITLE>
             Estate Forms
         </TITLE>
-        <?php require_once('stylesheetImport.php'); ?>
+         <?php require_once('stylesheetImport.php'); 
+			   require_once('functions.php');
+		?>
     </HEAD>
     <BODY>
       <?php require_once('header.php');?>
@@ -23,6 +25,9 @@
 				</br>
 				All forms must be printed out and endorsed with original signature(s).
 				</p>
+				<?php
+					displayFiles('Estate Forms');
+				?>
             </div>
         </div>
         <?php require_once('footer.php'); ?>
