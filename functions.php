@@ -38,7 +38,7 @@ function displayFiles($pageName)
 		$reference = $tableRow["Reference"];
 		$name= $tableRow["Name"];
 		
-		echo "<h3>File: <a href='". $reference . "' target='_blank'>$name</a><br/>";
+		echo "<h3>File: <a href='". htmlspecialchars($reference) . "' target='_blank'>$name</a><br/>";
 	}
 }
 

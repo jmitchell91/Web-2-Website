@@ -13,10 +13,7 @@
         <div class="content">
             <?php require_once('sidebar.php'); ?>
             <div id="pageContent">
-                <ul>
-                    Tips for Fiduciaries
-                    <li>Tip #1......</li>
-                </ul>
+			</br>
 				<?php
 					displayFiles('Fiduciary Tips');
 				?>
