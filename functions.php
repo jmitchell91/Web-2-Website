@@ -42,6 +42,10 @@ function displayFiles($pageName)
 	}
 }
 
+/*
+ *  display_errors: -> array
+ *  return an array of errors and output them to the browser
+ */
 function display_error()
 {
     global $errors;
@@ -53,52 +57,6 @@ function display_error()
         }
         echo '</div>';
     }
-}
-/* LOGIN USER
-function login()
-{
-    global $connection, $username, $errors, $userID;
-
-// grab form values from login form
-    $username = e($_POST['username']);
-    $password = e($_POST['password']);
-
-// make sure form is filled properly
-    if (empty($username)) {
-        array_push($errors, "Username is required");
-    }
-    if (empty($password)) {
-        array_push($errors, "Password is required");
-    }
-
-// attempt login if no errors on form
-    if (count($errors) == 0) {
-        //$password = md5($password);
-
-        $query = "SELECT * FROM Web2DB.Users WHERE Username='$username' AND Password='$password' LIMIT 1";
-        $results = mysqli_query($connection, $query);
-
-        if (mysqli_num_rows($results) == 1) { // user found
-            $logged_in_user = mysqli_fetch_assoc($results);
-                session_start();
-                $_SESSION['user'] = $logged_in_user;
-                $_SESSION['email'] = $logged_in_user['email'];
-                $_SESSION['userName'] = $logged_in_user['username'];
-                $_SESSION['success'] = "You are now logged in";
-                header('location: adminHomePage.php');
-        } else {
-            display_error ( array_push($errors, "Wrong username/password combination"))
-            ;
-        }
-    }
-    else
-        display_error ( $errors);
-}
-/*
- *  when login button is clicked
- *
-if (isset($_POST['login-btn'])) {
-    login();
 }
 
 /*
